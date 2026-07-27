@@ -19,6 +19,8 @@ LEAKAGE_COLUMNS = [
 
 ID_LIKE_COLUMNS = ["agent", "company"]
 
+MISSING_LABEL = "None"
+
 NUMERIC_FEATURES = [
     "lead_time",
     "arrival_date_year",
@@ -42,11 +44,14 @@ NUMERIC_FEATURES = [
     "is_family",
     "has_agent",
     "has_company",
+    "adr_per_guest",
+    "prev_cancel_ratio",
 ]
 
 CATEGORICAL_FEATURES = [
     "hotel",
     "arrival_date_month",
+    "arrival_weekday",
     "meal",
     "country",
     "market_segment",
@@ -54,6 +59,8 @@ CATEGORICAL_FEATURES = [
     "reserved_room_type",
     "deposit_type",
     "customer_type",
+    "agent",
+    "company",
 ]
 
 FEATURES = NUMERIC_FEATURES + CATEGORICAL_FEATURES
